@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: left;
+    height: 50px;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .navbar ul{
+    display: flex;
+    list-style: none;
+  }
+  .navbar ul li{
+    font-size: 26px;
+  }
+  .navbar ul li a{
+    padding: 5px 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .navbar ul li a:hover{
+    border-bottom: 4px solid lime;
+  }
+
+  #home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    color: aqua;
+  }
+  
+  #home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('me.jpg') no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    z-index: -1; 
+    opacity: .8;
+  }
+
+  .heading{
+    color: wheat;
+    font-size: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+  }
+
+
+  #photos{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+  }
+  
+  #photos h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img{
+    width: 360px;
+    height: 640px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .gallery img:hover{
+    background-color: white;
+    cursor: pointer;
+  }
+
+   
+  #hobbies{
+    display: flex;
+    flex-direction: column;
+    background: url('clds.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #hobbies h1{
+    margin: 40px;
+  }
+  
+  .columns{
+  display: flex;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+  }
+  
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    background-color: rgba(5, 4, 2, 0.1);
+    border-radius: 30px;
+    margin: 100px;
+  }
+
+  .box h2{
+  color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .box p{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  /* About Section */
+  #about {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background-color: bisque;
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  #about h1 {
+    font-size: 60px;
+    color: black;
+    margin: 20px; /* Reset margin */
+  }
+  
+  .about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .about img {
+    width: 500px; /* Adjust width of the image */
+    height: 440px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .name {
+    text-align: justify;
+    margin-left: 90px;
+    margin-right: 90px;
+    flex: 1; /* Allow text to take remaining space */
+  }
+  
+  .name h2 {
+    font-size: 2rem;
+    margin-top: 0; /* Reset margin */
+  }
+  
+  .name p {
+    font-size: 1.5rem;
+    margin-bottom: 0; /* Reset margin */
+  }
+  
+  /* Contact Section */
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    padding: 50px 0;
+    color: white;
+}
+
+#contact h1 {
+  font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
